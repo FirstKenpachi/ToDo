@@ -1,8 +1,10 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #5FD068 50%, #F6FBF4 50%);
+  background-image: -webkit-linear-gradient(55deg, #446A46 50%, #82A284 50%);
+  filter: blur(0.12px);
   min-height: 1000px;
   font-family: 'Kanit', sans-serif;
+  
 }
 
 h1 {
@@ -16,10 +18,22 @@ h1 {
   background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+ 
+}
+
+@keyframes example {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 200px;
+    background-color: blue;
+  }
 }
 
 #heading {
-  background-color: #5FD068;
+  background-color: #82A284;
   text-align: center;
 }
 
@@ -61,11 +75,14 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #5FD068;
+  background-color: #82A284;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
+  animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 input[type="text"] {
@@ -98,7 +115,22 @@ footer {
   border-radius: 50%;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: relative;
   float: right;
 
+}
+#heading{
+  animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 200px;
+    background-color:#446A46;
+  }
 }
