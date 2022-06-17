@@ -2,11 +2,14 @@
 Basic List which explores through your daily to do list!
 
 # Technologies used:
-Mongo
-Js
-EJS
+<ul>
+  <li>Mongo</li>
+  <li>EJS</li>
+  <li>CSS</li>
+  <li>Js</li>
+</ul>
 
-#Please:
+# Please:
 
 Dont use the inactive create new list ..instead just type the new list name to the search parameter ../{Listname}
 
